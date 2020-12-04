@@ -4,4 +4,4 @@
 
 A game of pong that implements principles of quantum mechanics.  Very rough work in progress
 
-Learning to use C++ and SDL-2
+Learning to use SDL-2 in C++
