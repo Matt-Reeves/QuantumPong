@@ -7,24 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FC85B9A20786FDB00FA82FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85B9920786FDB00FA82FD /* main.cpp */; };
+		3F2633F82082D62E001F69F4 /* libfftw3_mpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633EE2082D62C001F69F4 /* libfftw3_mpi.a */; };
+		3F2633F92082D62E001F69F4 /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633EF2082D62D001F69F4 /* libfftw3f.a */; };
+		3F2633FA2082D62E001F69F4 /* libfftw3_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633F12082D62D001F69F4 /* libfftw3_threads.a */; };
+		3F2633FB2082D62E001F69F4 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633F22082D62D001F69F4 /* libfftw3.a */; };
+		3F2633FC2082D62E001F69F4 /* libfftw3f_mpi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633F42082D62D001F69F4 /* libfftw3f_mpi.a */; };
+		3F2633FD2082D62E001F69F4 /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2633F62082D62D001F69F4 /* libfftw3f_threads.a */; };
+		3F59A7952079C068009678E5 /* schrodinger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F59A7942079C068009678E5 /* schrodinger.cpp */; };
+		3FC85BBC2078710300FA82FD /* text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85BB62078710300FA82FD /* text.cpp */; };
+		3FC85BBD2078710300FA82FD /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85BB72078710300FA82FD /* window.cpp */; };
+		3FC85BBE2078710300FA82FD /* paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85BB82078710300FA82FD /* paddle.cpp */; };
+		3FC85BBF2078710300FA82FD /* rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85BB92078710300FA82FD /* rect.cpp */; };
+		3FC85BC02078710300FA82FD /* barrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC85BBA2078710300FA82FD /* barrier.cpp */; };
+		3FC85BC2207874BC00FA82FD /* quantum_ball.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FC85BB12078710300FA82FD /* quantum_ball.png */; };
+		3FC85BC3207874BC00FA82FD /* Paddle.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FC85BB22078710300FA82FD /* Paddle.png */; };
+		3FC85BC4207874BC00FA82FD /* classical_ball.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FC85BB32078710300FA82FD /* classical_ball.png */; };
+		3FC85BC5207874BC00FA82FD /* Hack-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3FC85BB42078710300FA82FD /* Hack-Bold.ttf */; };
+		3FD600A3207B638B009D08C3 /* fftshift.c in Sources */ = {isa = PBXBuildFile; fileRef = 3FD600A2207B638B009D08C3 /* fftshift.c */; };
+		5335E9F42086C61300304D3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335E9F32086C61300304D3E /* main.cpp */; };
+		5335EA122086C96700304D3E /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335EA0F2086C96700304D3E /* SDL2_ttf.framework */; };
+		5335EA132086C96700304D3E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335EA102086C96700304D3E /* SDL2.framework */; };
+		5335EA142086C96700304D3E /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335EA112086C96700304D3E /* SDL2_image.framework */; };
+		5335EA182086F62900304D3E /* libmpi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5335EA172086F62900304D3E /* libmpi.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3FC85B9420786FDB00FA82FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 8;
+			dstPath = /Users/mattreeves/Documents/QuantumPong2/QuantumPong2/res;
 			dstSubfolderSpec = 0;
 			files = (
+				3FC85BC2207874BC00FA82FD /* quantum_ball.png in CopyFiles */,
+				3FC85BC3207874BC00FA82FD /* Paddle.png in CopyFiles */,
+				3FC85BC4207874BC00FA82FD /* classical_ball.png in CopyFiles */,
+				3FC85BC5207874BC00FA82FD /* Hack-Bold.ttf in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F099F8D21275C3B00F40F17 /* negative_paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negative_paddle.png; sourceTree = "<group>"; };
+		3F099F8E21275C3B00F40F17 /* cat_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_ball.png; sourceTree = "<group>"; };
+		3F099F8F21275C3B00F40F17 /* negative_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negative_ball.png; sourceTree = "<group>"; };
+		3F099F9021275C3B00F40F17 /* positive_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positive_ball.png; sourceTree = "<group>"; };
+		3F099F9121275C3B00F40F17 /* positive_paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positive_paddle.png; sourceTree = "<group>"; };
+		3F2633EC2082D62C001F69F4 /* libfftw3_threads.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3_threads.la; sourceTree = "<group>"; };
+		3F2633ED2082D62C001F69F4 /* libfftw3f.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3f.la; sourceTree = "<group>"; };
+		3F2633EE2082D62C001F69F4 /* libfftw3_mpi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3_mpi.a; sourceTree = "<group>"; };
+		3F2633EF2082D62D001F69F4 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3f.a; sourceTree = "<group>"; };
+		3F2633F02082D62D001F69F4 /* libfftw3f_mpi.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3f_mpi.la; sourceTree = "<group>"; };
+		3F2633F12082D62D001F69F4 /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3_threads.a; sourceTree = "<group>"; };
+		3F2633F22082D62D001F69F4 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3.a; sourceTree = "<group>"; };
+		3F2633F32082D62D001F69F4 /* libfftw3.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3.la; sourceTree = "<group>"; };
+		3F2633F42082D62D001F69F4 /* libfftw3f_mpi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3f_mpi.a; sourceTree = "<group>"; };
+		3F2633F52082D62D001F69F4 /* libfftw3_mpi.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3_mpi.la; sourceTree = "<group>"; };
+		3F2633F62082D62D001F69F4 /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3f_threads.a; sourceTree = "<group>"; };
+		3F2633F72082D62D001F69F4 /* libfftw3f_threads.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfftw3f_threads.la; sourceTree = "<group>"; };
+		3F59A7852079A8EB009678E5 /* fftw3-mpi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fftw3-mpi.h"; sourceTree = "<group>"; };
+		3F59A7862079A8EB009678E5 /* fftw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fftw3.h; sourceTree = "<group>"; };
+		3F59A7932079BF6F009678E5 /* schrodinger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schrodinger.h; sourceTree = "<group>"; };
+		3F59A7942079C068009678E5 /* schrodinger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = schrodinger.cpp; sourceTree = "<group>"; };
 		3FC85B9620786FDB00FA82FD /* QuantumPong2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = QuantumPong2; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FC85B9920786FDB00FA82FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3FC85BAB2078710300FA82FD /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text.h; sourceTree = "<group>"; };
+		3FC85BAC2078710300FA82FD /* barrier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = barrier.h; sourceTree = "<group>"; };
+		3FC85BAD2078710300FA82FD /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		3FC85BAE2078710300FA82FD /* rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rect.h; sourceTree = "<group>"; };
+		3FC85BAF2078710300FA82FD /* paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paddle.h; sourceTree = "<group>"; };
+		3FC85BB12078710300FA82FD /* quantum_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quantum_ball.png; sourceTree = "<group>"; };
+		3FC85BB22078710300FA82FD /* Paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paddle.png; sourceTree = "<group>"; };
+		3FC85BB32078710300FA82FD /* classical_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = classical_ball.png; path = QuantumPong2/res/classical_ball.png; sourceTree = SOURCE_ROOT; };
+		3FC85BB42078710300FA82FD /* Hack-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hack-Bold.ttf"; sourceTree = "<group>"; };
+		3FC85BB62078710300FA82FD /* text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = text.cpp; sourceTree = "<group>"; };
+		3FC85BB72078710300FA82FD /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		3FC85BB82078710300FA82FD /* paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = paddle.cpp; sourceTree = "<group>"; };
+		3FC85BB92078710300FA82FD /* rect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rect.cpp; sourceTree = "<group>"; };
+		3FC85BBA2078710300FA82FD /* barrier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = barrier.cpp; sourceTree = "<group>"; };
+		3FD600A2207B638B009D08C3 /* fftshift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fftshift.c; path = "../../../../Dropbox/C_C++_CUDA_src/GPESolver/fftshift.c"; sourceTree = "<group>"; };
+		5335E9F32086C61300304D3E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5335EA0F2086C96700304D3E /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		5335EA102086C96700304D3E /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		5335EA112086C96700304D3E /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		5335EA172086F62900304D3E /* libmpi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpi.dylib; sourceTree = "<group>"; };
+		5335EA192086F63B00304D3E /* mpi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpi.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +98,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5335EA122086C96700304D3E /* SDL2_ttf.framework in Frameworks */,
+				5335EA182086F62900304D3E /* libmpi.dylib in Frameworks */,
+				5335EA132086C96700304D3E /* SDL2.framework in Frameworks */,
+				5335EA142086C96700304D3E /* SDL2_image.framework in Frameworks */,
+				3F2633FD2082D62E001F69F4 /* libfftw3f_threads.a in Frameworks */,
+				3F2633F82082D62E001F69F4 /* libfftw3_mpi.a in Frameworks */,
+				3F2633FC2082D62E001F69F4 /* libfftw3f_mpi.a in Frameworks */,
+				3F2633F92082D62E001F69F4 /* libfftw3f.a in Frameworks */,
+				3F2633FA2082D62E001F69F4 /* libfftw3_threads.a in Frameworks */,
+				3F2633FB2082D62E001F69F4 /* libfftw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +119,7 @@
 			children = (
 				3FC85B9820786FDB00FA82FD /* QuantumPong2 */,
 				3FC85B9720786FDB00FA82FD /* Products */,
+				3FC85BA32078701F00FA82FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +134,81 @@
 		3FC85B9820786FDB00FA82FD /* QuantumPong2 */ = {
 			isa = PBXGroup;
 			children = (
-				3FC85B9920786FDB00FA82FD /* main.cpp */,
+				3FC85BAA2078710300FA82FD /* headers */,
+				3FC85BB02078710300FA82FD /* res */,
+				3FC85BB52078710300FA82FD /* src */,
 			);
 			path = QuantumPong2;
+			sourceTree = "<group>";
+		};
+		3FC85BA32078701F00FA82FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5335EA112086C96700304D3E /* SDL2_image.framework */,
+				5335EA0F2086C96700304D3E /* SDL2_ttf.framework */,
+				5335EA102086C96700304D3E /* SDL2.framework */,
+				3F2633F52082D62D001F69F4 /* libfftw3_mpi.la */,
+				3F2633EE2082D62C001F69F4 /* libfftw3_mpi.a */,
+				3F2633F12082D62D001F69F4 /* libfftw3_threads.a */,
+				3F2633EC2082D62C001F69F4 /* libfftw3_threads.la */,
+				3F2633F22082D62D001F69F4 /* libfftw3.a */,
+				3F2633F32082D62D001F69F4 /* libfftw3.la */,
+				3F2633F42082D62D001F69F4 /* libfftw3f_mpi.a */,
+				3F2633F02082D62D001F69F4 /* libfftw3f_mpi.la */,
+				3F2633F62082D62D001F69F4 /* libfftw3f_threads.a */,
+				3F2633F72082D62D001F69F4 /* libfftw3f_threads.la */,
+				3F2633EF2082D62D001F69F4 /* libfftw3f.a */,
+				3F2633ED2082D62C001F69F4 /* libfftw3f.la */,
+				5335EA172086F62900304D3E /* libmpi.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FC85BAA2078710300FA82FD /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				3F59A7932079BF6F009678E5 /* schrodinger.h */,
+				3FC85BAB2078710300FA82FD /* text.h */,
+				3FC85BAC2078710300FA82FD /* barrier.h */,
+				3F59A7852079A8EB009678E5 /* fftw3-mpi.h */,
+				3F59A7862079A8EB009678E5 /* fftw3.h */,
+				5335EA192086F63B00304D3E /* mpi.h */,
+				3FC85BAD2078710300FA82FD /* window.h */,
+				3FC85BAE2078710300FA82FD /* rect.h */,
+				3FC85BAF2078710300FA82FD /* paddle.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		3FC85BB02078710300FA82FD /* res */ = {
+			isa = PBXGroup;
+			children = (
+				3FC85BB12078710300FA82FD /* quantum_ball.png */,
+				3FC85BB22078710300FA82FD /* Paddle.png */,
+				3F099F8E21275C3B00F40F17 /* cat_ball.png */,
+				3F099F8F21275C3B00F40F17 /* negative_ball.png */,
+				3F099F8D21275C3B00F40F17 /* negative_paddle.png */,
+				3F099F9021275C3B00F40F17 /* positive_ball.png */,
+				3F099F9121275C3B00F40F17 /* positive_paddle.png */,
+				3FC85BB32078710300FA82FD /* classical_ball.png */,
+				3FC85BB42078710300FA82FD /* Hack-Bold.ttf */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		3FC85BB52078710300FA82FD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3F59A7942079C068009678E5 /* schrodinger.cpp */,
+				3FC85BB62078710300FA82FD /* text.cpp */,
+				3FD600A2207B638B009D08C3 /* fftshift.c */,
+				3FC85BB72078710300FA82FD /* window.cpp */,
+				3FC85BB82078710300FA82FD /* paddle.cpp */,
+				3FC85BB92078710300FA82FD /* rect.cpp */,
+				3FC85BBA2078710300FA82FD /* barrier.cpp */,
+				5335E9F32086C61300304D3E /* main.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC85B9A20786FDB00FA82FD /* main.cpp in Sources */,
+				3FC85BBC2078710300FA82FD /* text.cpp in Sources */,
+				3FD600A3207B638B009D08C3 /* fftshift.c in Sources */,
+				5335E9F42086C61300304D3E /* main.cpp in Sources */,
+				3FC85BBE2078710300FA82FD /* paddle.cpp in Sources */,
+				3FC85BBD2078710300FA82FD /* window.cpp in Sources */,
+				3FC85BC02078710300FA82FD /* barrier.cpp in Sources */,
+				3FC85BBF2078710300FA82FD /* rect.cpp in Sources */,
+				3F59A7952079C068009678E5 /* schrodinger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +389,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/open-mpi/3.0.1/include",
+					"/usr/local/opt/open-mpi/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuantumPong2",
+					"/usr/local/Cellar/open-mpi/3.0.1/lib",
+					"/usr/local/opt/open-mpi/lib",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +416,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/open-mpi/3.0.1/include",
+					"/usr/local/opt/open-mpi/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuantumPong2",
+					"/usr/local/Cellar/open-mpi/3.0.1/lib",
+					"/usr/local/opt/open-mpi/lib",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
