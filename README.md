@@ -1,4 +1,4 @@
-# QuantumPong
+# Quantum Pong
 
 <img align="right" src="./QuantumPong2/res/cat_ball.png" width="100" height="100">
 
